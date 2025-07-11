@@ -24,3 +24,128 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+/*
+  You no longer need to import @tailwind base, components, and utilities
+  directly in Tailwind CSS v4 / Next.js setup with App Router.
+  They are handled automatically.
+*/
+
+/* Custom Fonts - Poppins (already included in layout.js, just a reminder) */
+/*
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*/
+
+/* --- Keyframes for Animations --- */
+
+/* Text Pulse Animation */
+@keyframes pulse-light {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* Fade In Animation (for general elements) */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Fade In Up Animation (for elements appearing from bottom) */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade In Left Animation (for elements appearing from left) */
+@keyframes fade-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Fade In Right Animation (for elements appearing from right) */
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Background Gradient Animation */
+@keyframes radial-gradient-anim {
+  0% {
+    background-size: 100% 100%;
+    background-position: 0% 0%;
+  }
+  50% {
+    background-size: 150% 150%;
+    background-position: 100% 100%;
+  }
+  100% {
+    background-size: 100% 100%;
+    background-position: 0% 0%;
+  }
+}
+
+/* --- Tailwind CSS Utility Classes for Animations --- */
+
+.animate-pulse-light {
+  animation: pulse-light 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out forwards;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 1s ease-out forwards;
+}
+
+.animate-fade-in-left {
+  animation: fade-in-left 1s ease-out forwards;
+}
+
+.animate-fade-in-right {
+  animation: fade-in-right 1s ease-out forwards;
+}
+
+/* Delays (can be combined with other animations) */
+.delay-200 { animation-delay: 0.2s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-600 { animation-delay: 0.6s; }
+.delay-800 { animation-delay: 0.8s; }
+.delay-1000 { animation-delay: 1s; }
+.delay-1200 { animation-delay: 1.2s; }
+.delay-1400 { animation-delay: 1.4s; }
+.delay-1600 { animation-delay: 1.6s; }
+.delay-1800 { animation-delay: 1.8s; }
+.delay-2000 { animation-delay: 2s; }
+
+
+/* Animated Gradient Background Class */
+.bg-animated-gradient {
+  background: radial-gradient(circle at top left, #0A0A0A, #172554, #2E004B); /* الألوان الأساسية للخلفية */
+  animation: radial-gradient-anim 15s ease infinite alternate; /* وقت الأنيميشن والنمط */
+}
