@@ -20,41 +20,46 @@ const Education = () => {
             <EducationCard
               degree="Diploma in Biochemistry"
               institution="Beni Suef University"
-              duration="2022"
+              duration="2023-2024"
             />
             <EducationCard
               degree="BSc in Chemistry & Zoology"
               institution="Aswan University, Faculty of Science"
-              duration="2016 - 2020"
+              duration="2018 - 2022"
             />
           </div>
           <div>
             <h3 className="text-2xl font-semibold text-gray-800 mb-6 border-b pb-3 border-gray-300">Professional Certifications</h3>
-            <EducationCard
-              degree="QCTR-100: Fundamentals of Quality Control course"
-              institution="The American University in Cairo"
+
+             <EducationCard
+              degree="EF SET English Certificate B2 (Upper-Intermediate)"
+              institution="EF Standard English Test"
               duration="2024"
             />
-            <EducationCard
+
+             <EducationCard
+              degree="OSHA Construction course"
+              institution="Egyptian Syndicate of Scientific Professions"
+              duration="2024"
+            />
+              <EducationCard
               degree="OSHA General Industry course"
               institution="Egyptian Syndicate of Scientific Professions"
               duration="2024"
             />
             <EducationCard
-              degree="OSHA Construction course"
-              institution="Egyptian Syndicate of Scientific Professions"
-              duration="2024"
+              degree="QCTR-100: Fundamentals of Quality Control course"
+              institution="The American University in Cairo"
+              duration="2022"
             />
+          
+           
             <EducationCard
               degree="Marketing Professional Course"
               institution="American Chamber of Commerce in Egypt"
               duration="2022"
             />
-            <EducationCard
-              degree="EF SET English Certificate B2 (Upper-Intermediate)"
-              institution="EF Standard English Test"
-              duration="2024"
-            />
+           
           </div>
         </div>
       </div>
