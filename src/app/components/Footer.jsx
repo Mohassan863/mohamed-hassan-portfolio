@@ -24,6 +24,11 @@ const Footer = () => {
             +966 59 328 8276
           </p>
           <span className="hidden md:block text-gray-500">|</span>
+          <p className="text-lg text-blue-300 flex items-center">
+            <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"></path></svg>
+            +201032932198
+          </p>
+          <span className="hidden md:block text-gray-500">|</span>
           {/* رابط لينكدإن الحالي */}
           <a
             href="https://www.linkedin.com/in/mohamed-hassan-22b15a1a6/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
